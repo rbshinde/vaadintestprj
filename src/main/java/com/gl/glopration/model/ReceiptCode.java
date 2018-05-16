@@ -1,0 +1,5 @@
+package com.gl.glopration.model;
+
+public enum ReceiptCode {
+	EX_WORKS_001, FREE_CARRIER_002, CARRIAGE_PAID_TO_003, CARRIAGE_AND_INSURANCE_PAID_004, DELIVERED_DUTY_PAID_005;
+}

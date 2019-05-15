@@ -7,4 +7,8 @@ node {
     	sh "pwd"
     	sh "ls -alh"
     }
+    
+    stage('compile the code') {
+       sh "mvn clean install"
+    }
 }

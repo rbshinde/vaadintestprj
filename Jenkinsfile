@@ -1,4 +1,7 @@
 node {
+	agent {
+        docker { image 'node:7-alpine' }
+    }
     stage('Clone source') {
         checkout scm
     }

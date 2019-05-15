@@ -1,9 +1,10 @@
 node {
     stage('Clone source') {
-        sh "pwd"
-        dir('my_dir') {
-            sh "pwd"
-            checkout scm
-        }
+        checkout scm
+    }
+    
+    stage('what the result') {
+    	sh "pwd"
+    	sh "ls -alh"
     }
 }

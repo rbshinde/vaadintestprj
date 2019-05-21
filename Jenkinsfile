@@ -9,6 +9,8 @@ node {
     }
     
     stage('compile the code') {
-       sh "mvn clean install"
+       sh "mvn package -DskipTests"
     }
+    
+    
 }
